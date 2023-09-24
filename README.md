@@ -1,4 +1,4 @@
-# Blockchain_Assignment1
+# Blockchain_Assignment1 completed by Sayat Tulesov, Dias Kambar and Maksat Muratuly
 
 3.1 Define Blockchain Structure
 
