@@ -1,5 +1,3 @@
-# Blockchain_Assignment1 completed by Sayat Tulesov, Dias Kambar and Maksat Muratuly
-
 3.1 Define Blockchain Structure
 
 In a blockchain, you typically have the following components:
