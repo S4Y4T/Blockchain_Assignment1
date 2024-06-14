@@ -1,4 +1,4 @@
-3.1 Define Blockchain Structure
+# 3.1 Define Blockchain Structure
 
 In a blockchain, you typically have the following components:
 Block: A data structure that contains a set of transactions, a timestamp, a nonce, and a reference to the previous block (usually a hash).
@@ -32,7 +32,7 @@ Previous Block Reference: A reference (usually a hash) to the previous block in 
             data_json = json.dumps(data, sort_keys=True).encode('utf-8')
             return hashlib.sha256(data_json).hexdigest()
 
-3.2 Initialize Blockchain
+# 3.2 Initialize Blockchain
 
 Initialize the blockchain with a genesis block, which is the first block in the chain. The genesis block has no previous block reference.
 
@@ -40,7 +40,7 @@ Initialize the blockchain with a genesis block, which is the first block in the 
         def create_genesis_block(self):
           return Block(0, "0", [], 1632535482.903651)
 
-3.3 Add Blocks
+# 3.3 Add Blocks
 
 Implement the logic for adding new blocks to the blockchain. New blocks should contain a reference to the previous block.
 
@@ -52,7 +52,7 @@ Implement the logic for adding new blocks to the blockchain. New blocks should c
           new_block.hash = new_block.calculate_hash()
           self.chain.append(new_block)
 
-3.4 Handle Transactions
+# 3.4 Handle Transactions
 
 Create a mechanism for handling transactions within blocks. This may involve creating a transaction pool, selecting transactions for inclusion, and ensuring data integrity.
 
@@ -90,11 +90,11 @@ Create a mechanism for handling transactions within blocks. This may involve cre
         def handle_new_transaction(transaction, Blockchain):
             return Blockchain.handle_transaction(transaction)
 
-3.5 Merkle Tree Integration
+# 3.5 Merkle Tree Integration
 
 Integrate a Merkle tree for transaction storage and verification. The Merkle tree is used to efficiently verify the integrity of transactions in a block.
 
-3.6 Block Validation
+# 3.6 Block Validation
 
 Implement a robust block validation process to ensure the integrity of each block in the blockchain. This includes verifying the hash and the previous block reference.
 
@@ -114,11 +114,11 @@ Implement a robust block validation process to ensure the integrity of each bloc
     
         return True  # If all checks pass, the block is valid
 
-3.7 Version Control (VCS)
+# 3.7 Version Control (VCS)
 
 Utilize a version control system (e.g., Git) for effective code management and collaboration. Regularly commit your code to track changes and maintain a history of your project.
 
-3.8 Interface Integration
+# 3.8 Interface Integration
 
 Integrate an interface for user interactions. This can vary depending on your project's requirements and can include a web application, API, GUI, or console interface.
     
